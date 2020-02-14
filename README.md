@@ -32,7 +32,7 @@ POC's for Java 8 features
 
 ## Design Patterns
 
-  ### Structural design Pattern
+  ### Structural design Patterns
   
   #### Decorator
   Decorator pattern allows a user to add new functionality to an existing object without altering its structure. This pattern acts as a wrapper to existing class.
@@ -60,3 +60,8 @@ POC's for Java 8 features
   Like an college's internet, which restricts few site access. The proxy first checks the host you are connecting to, if it is not part of restricted site list, then it connects to the real internet. This example is based on Protection proxies.
   *Reference*:https://www.geeksforgeeks.org/proxy-design-pattern/
   
+  ### Creational Design Patterns
+  
+  #### Singleton
+  This pattern involves a single class which is responsible to create an object while making sure that only single object gets created. This class provides a way to access its only object which can be accessed directly without need to instantiate the object of the class.
+  *Reference*:https://www.journaldev.com/1377/java-singleton-design-pattern-best-practices-examples
