@@ -34,6 +34,9 @@ POC's for Java 8 features
 
   ### Structural design Pattern
   
+  #### Decorator
+  Decorator pattern allows a user to add new functionality to an existing object without altering its structure. This pattern acts as a wrapper to existing class.
+  
   #### Adapter 
   This pattern involves a single class which is responsible to join functionalities of independent or incompatible interfaces. A real life example could be a case of card reader which acts as an adapter between memory card and a laptop. You plugin the memory card into card reader and card reader into the laptop so that memory card can be read via laptop.
   
@@ -51,5 +54,9 @@ POC's for Java 8 features
   Flyweight pattern is primarily used to reduce the number of objects created and to decrease memory footprint and increase  performance. This pattern provides ways to decrease object count thus improving the object structure of application.
   (For e.g. we used to cache metadata in IXC within maps of pojo wrt their unique ids)
   
-  ####   
+  #### Proxy
+  In proxy pattern, we create object having original object to interface its functionality to outer world.
+  Usage example:
+  Like an college's internet, which restricts few site access. The proxy first checks the host you are connecting to, if it is not part of restricted site list, then it connects to the real internet. This example is based on Protection proxies.
+  *Reference*:https://www.geeksforgeeks.org/proxy-design-pattern/
   
