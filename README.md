@@ -1,5 +1,6 @@
-# J8
-POC's for Java 8 features 
+# POCs 
+
+### Java 8 features 
 
 #### ForEach in Iterable interface
 
