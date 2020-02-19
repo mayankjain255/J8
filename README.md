@@ -38,8 +38,16 @@
   #### Decorator
   Decorator pattern allows a user to add new functionality to an existing object without altering its structure. This pattern acts as a wrapper to existing class.
   
+  ##### Advantages of Decorator Design Pattern
+  	We can have any number of decorators and also in any order.
+	It extends functionality of object without affecting any other object.
+  
+  ##### Disadvantage of Decorator Design Pattern
+	The main disadvantage of decorator design pattern is code maintainability because this pattern creates lots of similar decorators which are sometimes hard to maintain and distinguish.
+  
   #### Adapter 
   This pattern involves a single class which is responsible to join functionalities of independent or incompatible interfaces. A real life example could be a case of card reader which acts as an adapter between memory card and a laptop. You plugin the memory card into card reader and card reader into the laptop so that memory card can be read via laptop.
+  https://stackabuse.com/structural-design-patterns-in-java/#adapter
   
   #### Composition 
   Composition helps to implement has-a relationship in classes. We can use java inheritance or Object composition in java for code reuse.
@@ -47,19 +55,44 @@
   (Used in IXC with in form of CommonRequest POJO usage within other pojo's)
   *Reference*: https://www.journaldev.com/1325/composition-in-java-example
   
+  ##### Advantages of the Composition design pattern include:
+	We can control the visibility of other object to client classes and reuse only what we need.
+
+  ##### Disadvantages include:
+	Due to tight coupling between classes, it will be hard to make changes in hierarchy Also there can be a case when there will some unnessary object creation .  
+  
   #### Facade
   Facade pattern hides the complexities of the system and provides an interface to the client using which the client can access the system.This pattern adds an interface to existing system to hide its complexities.
   (For e.g. Used in IXC wihthin filter and we hide complexity within applyFilter Method)
   
+  ##### Advantages of the facade design pattern include:
+	Simplifies the use of a complex library/collection of classes.
+	Concentrates the code for that library/collection of classes into one point in your code.
+	Reduces the coupling between your code and the library/collection of classes.
+
+  ##### Disadvantages include:
+	Adds a layer of indirection which may affect performance.
+	May make your code base bigger.
+	Developers will need to learn to use. For example, we may need documentation for libraries.
+  
   #### Flyweight
   Flyweight pattern is primarily used to reduce the number of objects created and to decrease memory footprint and increase  performance. This pattern provides ways to decrease object count thus improving the object structure of application.
+  E.x. - Caching of metadata, Connection Pool, Thread pool
   (For e.g. we used to cache metadata in IXC within maps of pojo wrt their unique ids)
+  
+  ##### Advantages of Flyweight Design Pattern
+	Reduce memory usage by sharing heavy objects.
+	Improved data caching for higher response time.
+	Increased performance due to a lesser number of heavy objects.
+  ##### Drawbacks of Flyweight Design Pattern
+	This makes garbage collection unfriendly solution, as per the implementation, shared objects may be not eligible for garbage collection.
+	There will be a cost to keep objects in sync.
   
   #### Proxy
   In proxy pattern, we create object having original object to interface its functionality to outer world.
   Usage example:
   Like an college's internet, which restricts few site access. The proxy first checks the host you are connecting to, if it is not part of restricted site list, then it connects to the real internet. This example is based on Protection proxies.
-  *Reference*:https://www.geeksforgeeks.org/proxy-design-pattern/
+  *Reference*:https://www.geeksforgeeks.org/proxy-design-pattern/  
   
   ### Creational Design Patterns
   
