@@ -47,7 +47,6 @@
   
   #### Adapter 
   This pattern involves a single class which is responsible to join functionalities of independent or incompatible interfaces. A real life example could be a case of card reader which acts as an adapter between memory card and a laptop. You plugin the memory card into card reader and card reader into the laptop so that memory card can be read via laptop.
-  https://stackabuse.com/structural-design-patterns-in-java/#adapter
   
   ##### Advantages of Adapter Design Pattern
   	Helps achieve reusability and flexibility.
@@ -60,7 +59,6 @@
   Composition helps to implement has-a relationship in classes. We can use java inheritance or Object composition in java for code reuse.
   Composite pattern is used where we need to treat a group of objects in similar way as a single object. Composite pattern composes objects in term of a tree structure to represent part as well as whole hierarchy. This pattern creates a tree structure of group of objects.
   (Used in IXC with in form of CommonRequest POJO usage within other pojo's)
-  *Reference*: https://www.journaldev.com/1325/composition-in-java-example
   
   ##### Advantages of the Composition design pattern include:
 	We can control the visibility of other object to client classes and reuse only what we need.
@@ -99,7 +97,6 @@
   In proxy pattern, we create object having original object to interface its functionality to outer world.
   Usage example:
   Like an college's internet, which restricts few site access. The proxy first checks the host you are connecting to, if it is not part of restricted site list, then it connects to the real internet. This example is based on Protection proxies.
-  *Reference*:https://www.geeksforgeeks.org/proxy-design-pattern/
   
   ##### Advantages of Proxy Design Pattern
 	One of the advantages of Proxy pattern is security.
@@ -113,3 +110,10 @@
   #### Singleton
   This pattern involves a single class which is responsible to create an object while making sure that only single object gets created. This class provides a way to access its only object which can be accessed directly without need to instantiate the object of the class.
   *Reference*:https://www.journaldev.com/1377/java-singleton-design-pattern-best-practices-examples
+
+
+
+*References*:
+1) Adapter Pattern - https://stackabuse.com/structural-design-patterns-in-java/#adapter
+2) Composition Pattern - https://www.journaldev.com/1325/composition-in-java-example
+3) Proxy Pattern - https://www.geeksforgeeks.org/proxy-design-pattern/
